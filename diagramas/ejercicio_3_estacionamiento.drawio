@@ -1,0 +1,315 @@
+<mxfile host="app.diagrams.net" agent="OpenAI">
+  <diagram id="ejercicio3_estacionamiento" name="Ejercicio 3 - Administración del estacionamiento">
+    <mxGraphModel dx="11979" dy="5350" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3400" pageHeight="4520" background="light-dark(#ffffff, #121212)" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="e3_a3" edge="1" parent="1" source="e3_menu" style="edgeStyle=none;rounded=0;html=1;strokeColor=#000000;strokeWidth=1.35;startArrow=none;endArrow=none;startFill=0;endFill=0;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitPerimeter=1;entryPerimeter=1;" target="e3_read_option" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pTum5tM8xLdDwrU8CdoH-41" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="2500" width="7220" x="-1950" y="750" as="geometry" />
+        </mxCell>
+        <mxCell id="e3_a2" edge="1" parent="1" source="e3_init" style="edgeStyle=none;rounded=0;html=1;strokeColor=#000000;strokeWidth=1.35;startArrow=none;endArrow=none;startFill=0;endFill=0;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitPerimeter=1;entryPerimeter=1;" target="e3_menu" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3_hours_frame" parent="1" style="shape=rectangle;rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=14;spacingTop=8;strokeColor=#000000;fillColor=#FFFFFF;strokeWidth=1.5;fontColor=#000000;fontSize=16;fontStyle=1;container=0;collapsible=0;" value="" vertex="1">
+          <mxGeometry height="430" width="815" x="385" y="1600" as="geometry" />
+        </mxCell>
+        <mxCell id="e3_start" parent="1" style="ellipse;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeColor=#000000;fillColor=#FFFFFF;strokeWidth=1.35;fontColor=#000000;fontSize=15;" value="INICIO" vertex="1">
+          <mxGeometry height="65" width="150" x="1625" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="e3_init" parent="1" style="rectangle;rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeColor=#000000;fillColor=#FFFFFF;strokeWidth=1.35;fontColor=#000000;fontSize=15;" value="CAPACIDAD_MAXIMA = 20&lt;br&gt;Definir TARIFA_POR_HORA = ₡800&lt;br&gt;vehiculos_presentes = 0&lt;br&gt;salidas_registradas = 0&lt;br&gt;recaudacion_total = 0&lt;div&gt;seguir = True&lt;/div&gt;" vertex="1">
+          <mxGeometry height="150" width="760" x="1320" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="e3_menu" parent="1" style="parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeColor=#000000;fillColor=#FFFFFF;strokeWidth=1.35;fontColor=#000000;fontSize=15;" value="Imprimir&amp;nbsp;&lt;div&gt;--- MENU PRINCIPAL ---&lt;br&gt;1. Registrar ingreso&lt;br&gt;2. Registrar salida&lt;br&gt;3. Consultar ocupación&lt;br&gt;4. Consultar recaudación&lt;br&gt;5. Salir&lt;/div&gt;" vertex="1">
+          <mxGeometry height="160" width="580" x="1410" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="e3_read_option" parent="1" style="parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeColor=#000000;fillColor=#FFFFFF;strokeWidth=1.35;fontColor=#000000;fontSize=15;" value="Leer opcion" vertex="1">
+          <mxGeometry height="100" width="480" x="1460" y="800" as="geometry" />
+        </mxCell>
+        <mxCell id="e3_d1" parent="1" style="rhombus;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeColor=#000000;fillColor=#FFFFFF;strokeWidth=1.35;fontColor=#000000;fontSize=15;" value="opcion" vertex="1">
+          <mxGeometry height="150" width="400" x="1500" y="940" as="geometry" />
+        </mxCell>
+        <mxCell id="e3_capacity" parent="1" style="rhombus;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeColor=#000000;fillColor=#FFFFFF;strokeWidth=1.35;fontColor=#000000;fontSize=15;" value="vehiculos_presentes&lt;br&gt;&amp;lt; CAPACIDAD_MAXIMA" vertex="1">
+          <mxGeometry height="160" width="400" x="-1280" y="1230" as="geometry" />
+        </mxCell>
+        <mxCell id="e3_add_car" parent="1" style="rectangle;rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeColor=#000000;fillColor=#FFFFFF;strokeWidth=1.35;fontColor=#000000;fontSize=15;" value="vehiculos_presentes += 1" vertex="1">
+          <mxGeometry height="100" width="440" x="-1790" y="1470" as="geometry" />
+        </mxCell>
+        <mxCell id="e3_print_add" parent="1" style="parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeColor=#000000;fillColor=#FFFFFF;strokeWidth=1.35;fontColor=#000000;fontSize=15;" value="Imprimir &quot;ingreso registrado&quot;" vertex="1">
+          <mxGeometry height="60" width="300" x="-1720" y="1630" as="geometry" />
+        </mxCell>
+        <mxCell id="e3_print_full" parent="1" style="parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeColor=#000000;fillColor=#FFFFFF;strokeWidth=1.35;fontColor=#000000;fontSize=15;" value="Imprimir &quot;No se puede registrar el ingreso: el estacionamiento esta lleno.&quot;" vertex="1">
+          <mxGeometry height="100" width="440" x="-900" y="1470" as="geometry" />
+        </mxCell>
+        <mxCell id="e3_d_empty" parent="1" style="rhombus;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeColor=#000000;fillColor=#FFFFFF;strokeWidth=1.35;fontColor=#000000;fontSize=15;" value="¿vehiculos_presentes == 0?" vertex="1">
+          <mxGeometry height="160" width="400" x="-30" y="1250" as="geometry" />
+        </mxCell>
+        <mxCell id="e3_print_empty" parent="1" style="parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeColor=#000000;fillColor=#FFFFFF;strokeWidth=1.35;fontColor=#000000;fontSize=15;" value="Imprimir mensaje:&lt;br&gt;estacionamiento vacío" vertex="1">
+          <mxGeometry height="100" width="440" x="-370" y="1470" as="geometry" />
+        </mxCell>
+        <mxCell id="e3_read_hours" parent="1" style="parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeColor=#000000;fillColor=#FFFFFF;strokeWidth=1.35;fontColor=#000000;fontSize=15;" value="Leer horas_cobradas" vertex="1">
+          <mxGeometry height="100" width="500" x="540" y="1440" as="geometry" />
+        </mxCell>
+        <mxCell id="e3_err_hours" parent="1" style="parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeColor=#000000;fillColor=#FFFFFF;strokeWidth=1.35;fontColor=#000000;fontSize=15;" value="Imprimir error: las horas&lt;br&gt;deben ser mayores que cero" vertex="1">
+          <mxGeometry height="100" width="400" x="590" y="1690" as="geometry" />
+        </mxCell>
+        <mxCell id="e3_charge" parent="1" style="rectangle;rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeColor=#000000;fillColor=#FFFFFF;strokeWidth=1.35;fontColor=#000000;fontSize=15;" value="pago_salida = horas_cobradas × TARIFA_POR_HORA&lt;br&gt;vehiculos_presentes -= 1&lt;br&gt;salidas_registradas += 1&lt;br&gt;recaudacion_total += pago_salida" vertex="1">
+          <mxGeometry height="150" width="500" x="542.5" y="2120" as="geometry" />
+        </mxCell>
+        <mxCell id="e3_print_payment" parent="1" style="parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeColor=#000000;fillColor=#FFFFFF;strokeWidth=1.35;fontColor=#000000;fontSize=15;" value="Imprimir&amp;nbsp;pago_salida,&amp;nbsp;vehiculos_presentes" vertex="1">
+          <mxGeometry height="100" width="500" x="542.5" y="2360" as="geometry" />
+        </mxCell>
+        <mxCell id="e3_calc_spaces" parent="1" style="rectangle;rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeColor=#000000;fillColor=#FFFFFF;strokeWidth=1.35;fontColor=#000000;fontSize=15;" value="espacios_libres =&lt;br&gt;CAPACIDAD_MAXIMA - vehiculos_presentes" vertex="1">
+          <mxGeometry height="110" width="500" x="1580" y="1300" as="geometry" />
+        </mxCell>
+        <mxCell id="e3_print_spaces" parent="1" style="parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeColor=#000000;fillColor=#FFFFFF;strokeWidth=1.35;fontColor=#000000;fontSize=15;" value="Imprimir&amp;nbsp;vehiculos_presentes,&amp;nbsp;espacios_libres" vertex="1">
+          <mxGeometry height="100" width="500" x="1580" y="1540" as="geometry" />
+        </mxCell>
+        <mxCell id="e3_print_revenue" parent="1" style="parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeColor=#000000;fillColor=#FFFFFF;strokeWidth=1.35;fontColor=#000000;fontSize=15;" value="Imprimir recaudacion_total, salidas_registradas" vertex="1">
+          <mxGeometry height="110" width="500" x="2560" y="1290" as="geometry" />
+        </mxCell>
+        <mxCell id="e3_print_summary" parent="1" style="parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeColor=#000000;fillColor=#FFFFFF;strokeWidth=1.35;fontColor=#000000;fontSize=15;" value="espacios_libres = CAPACIDAD_MAXIMA - vehiculos_presentes" vertex="1">
+          <mxGeometry height="130" width="600" x="3560" y="1290" as="geometry" />
+        </mxCell>
+        <mxCell id="e3_break" parent="1" style="rectangle;rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeColor=#000000;fillColor=#FFFFFF;strokeWidth=1.35;fontColor=#000000;fontSize=15;" value="seguir = False" vertex="1">
+          <mxGeometry height="100" width="600" x="3560" y="1850" as="geometry" />
+        </mxCell>
+        <mxCell id="e3_invalid" parent="1" style="parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeColor=#000000;fillColor=#FFFFFF;strokeWidth=1.35;fontColor=#000000;fontSize=15;" value="Imprimir &quot;Opcion no valida. Seleccione una opcion del 1 al 5.&quot;" vertex="1">
+          <mxGeometry height="110" width="480" x="4640" y="1290" as="geometry" />
+        </mxCell>
+        <mxCell id="e3_end" parent="1" style="ellipse;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeColor=#000000;fillColor=#FFFFFF;strokeWidth=1.35;fontColor=#000000;fontSize=15;" value="FIN" vertex="1">
+          <mxGeometry height="65" width="150" x="1625" y="3620" as="geometry" />
+        </mxCell>
+        <mxCell id="e3_cap_yes" parent="1" style="text;html=1;align=center;verticalAlign=middle;strokeColor=none;fillColor=none;fontColor=#000000;fontSize=14;fontStyle=1;" value="SÍ" vertex="1">
+          <mxGeometry height="36" width="70" x="-1430" y="1250" as="geometry" />
+        </mxCell>
+        <mxCell id="e3_cap_no" parent="1" style="text;html=1;align=center;verticalAlign=middle;strokeColor=none;fillColor=none;fontColor=#000000;fontSize=14;fontStyle=1;" value="NO" vertex="1">
+          <mxGeometry height="36" width="70" x="-840" y="1240" as="geometry" />
+        </mxCell>
+        <mxCell id="e3_empty_yes" parent="1" style="text;html=1;align=center;verticalAlign=middle;strokeColor=none;fillColor=none;fontColor=#000000;fontSize=14;fontStyle=1;" value="SÍ" vertex="1">
+          <mxGeometry height="36" width="70" x="-130" y="1280" as="geometry" />
+        </mxCell>
+        <mxCell id="e3_empty_no" parent="1" style="text;html=1;align=center;verticalAlign=middle;strokeColor=none;fillColor=none;fontColor=#000000;fontSize=14;fontStyle=1;" value="NO" vertex="1">
+          <mxGeometry height="36" width="70" x="385" y="1280" as="geometry" />
+        </mxCell>
+        <mxCell id="e3_a1" edge="1" parent="1" source="e3_start" style="edgeStyle=none;rounded=0;html=1;strokeColor=#000000;strokeWidth=1.35;startArrow=none;endArrow=none;startFill=0;endFill=0;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitPerimeter=1;entryPerimeter=1;" target="e3_init" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3_a4" edge="1" parent="1" source="e3_read_option" style="edgeStyle=none;rounded=0;html=1;strokeColor=#000000;strokeWidth=1.35;startArrow=none;endArrow=none;startFill=0;endFill=0;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitPerimeter=1;entryPerimeter=1;" target="e3_d1" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e3_a9_yes" edge="1" parent="1" source="e3_d_empty" style="edgeStyle=none;rounded=0;html=1;strokeColor=#000000;strokeWidth=1.35;startArrow=none;endArrow=none;startFill=0;endFill=0;exitX=0;exitY=0.5;entryX=0.5;entryY=0;exitPerimeter=1;entryPerimeter=1;" target="e3_print_empty" value="">
+          <mxGeometry relative="1" x="0.0353" as="geometry">
+            <Array as="points">
+              <mxPoint x="-150" y="1330" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e3_a9_no" edge="1" parent="1" source="e3_d_empty" style="edgeStyle=none;rounded=0;html=1;strokeColor=#000000;strokeWidth=1.35;startArrow=none;endArrow=none;startFill=0;endFill=0;exitX=1;exitY=0.5;entryX=0.5;entryY=0;exitPerimeter=1;entryPerimeter=1;" target="e3_read_hours" value="">
+          <mxGeometry relative="1" x="-0.034" as="geometry">
+            <Array as="points">
+              <mxPoint x="790" y="1330" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e3_a10" edge="1" parent="1" source="e3_read_hours" style="edgeStyle=none;rounded=0;html=1;strokeColor=#000000;strokeWidth=1.35;startArrow=none;endArrow=none;startFill=0;endFill=0;exitX=0.5;exitY=1;exitPerimeter=1;" target="e3_hours_frame" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="770" y="1620" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e3_a15" edge="1" parent="1" source="e3_calc_spaces" style="edgeStyle=none;rounded=0;html=1;strokeColor=#000000;strokeWidth=1.35;startArrow=none;endArrow=none;startFill=0;endFill=0;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitPerimeter=1;entryPerimeter=1;" target="e3_print_spaces" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3_a18" edge="1" parent="1" source="e3_print_summary" style="edgeStyle=none;rounded=0;html=1;strokeColor=#000000;strokeWidth=1.35;startArrow=none;endArrow=none;startFill=0;endFill=0;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitPerimeter=1;entryPerimeter=1;" target="e3_break" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pTum5tM8xLdDwrU8CdoH-1" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=18;" value="Mientras" vertex="1">
+          <mxGeometry height="30" width="60" x="-1720" y="610" as="geometry" />
+        </mxCell>
+        <mxCell id="pTum5tM8xLdDwrU8CdoH-2" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;seguir = True&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="120" x="4960" y="610" as="geometry" />
+        </mxCell>
+        <mxCell id="pTum5tM8xLdDwrU8CdoH-5" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;defaultLabelBackgroundColor=page;labelPadding=0 4;entryX=0.5;entryY=1;entryDx=0;entryDy=0;startArrow=none;startFill=0;" target="e3_d1" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="1700" y="1130" />
+            </Array>
+            <mxPoint x="-1080" y="1130" as="sourcePoint" />
+            <mxPoint x="1310" y="1210" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pTum5tM8xLdDwrU8CdoH-7" edge="1" parent="1" source="e3_capacity" style="edgeStyle=none;rounded=0;html=1;strokeColor=#000000;strokeWidth=1.35;startArrow=none;endArrow=none;startFill=0;endFill=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="-1030" y="1200" as="sourcePoint" />
+            <mxPoint x="-1080" y="1130" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pTum5tM8xLdDwrU8CdoH-8" edge="1" parent="1" source="e3_add_car" style="endArrow=none;html=1;rounded=0;defaultLabelBackgroundColor=page;labelPadding=0 4;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" target="e3_capacity" value="">
+          <mxGeometry height="50" relative="1" width="50" x="-0.0016" as="geometry">
+            <Array as="points">
+              <mxPoint x="-1571.12" y="1310" />
+            </Array>
+            <mxPoint x="-1270" y="1420" as="sourcePoint" />
+            <mxPoint x="-1220" y="1370" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pTum5tM8xLdDwrU8CdoH-9" edge="1" parent="1" source="e3_print_full" style="endArrow=none;html=1;rounded=0;defaultLabelBackgroundColor=page;labelPadding=0 4;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" target="e3_capacity" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="-680" y="1310" />
+            </Array>
+            <mxPoint x="-890" y="1410" as="sourcePoint" />
+            <mxPoint x="-840" y="1360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pTum5tM8xLdDwrU8CdoH-10" edge="1" parent="1" source="e3_print_add" style="endArrow=none;html=1;rounded=0;defaultLabelBackgroundColor=page;labelPadding=0 4;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" target="e3_add_car" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="-1230" y="1670" as="sourcePoint" />
+            <mxPoint x="-1150" y="1580" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pTum5tM8xLdDwrU8CdoH-11" parent="1" style="parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeColor=#000000;fillColor=#FFFFFF;strokeWidth=1.35;fontColor=#000000;fontSize=15;" value="Imprimir vehiculos_presentes" vertex="1">
+          <mxGeometry height="60" width="300" x="-1720" y="1770" as="geometry" />
+        </mxCell>
+        <mxCell id="pTum5tM8xLdDwrU8CdoH-12" edge="1" parent="1" source="pTum5tM8xLdDwrU8CdoH-11" style="endArrow=none;html=1;rounded=0;defaultLabelBackgroundColor=page;labelPadding=0 4;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" target="e3_print_add" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="-1450" y="1620" as="sourcePoint" />
+            <mxPoint x="-1400" y="1570" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pTum5tM8xLdDwrU8CdoH-13" edge="1" parent="1" source="e3_d_empty" style="endArrow=none;html=1;rounded=0;defaultLabelBackgroundColor=page;labelPadding=0 4;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="70" y="1220" as="sourcePoint" />
+            <mxPoint x="170" y="1130" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pTum5tM8xLdDwrU8CdoH-16" parent="1" style="parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeColor=#000000;fillColor=#FFFFFF;strokeWidth=1.35;fontColor=#000000;fontSize=15;" value="Leer horas_cobradas" vertex="1">
+          <mxGeometry height="100" width="500" x="540" y="1860" as="geometry" />
+        </mxCell>
+        <mxCell id="pTum5tM8xLdDwrU8CdoH-17" edge="1" parent="1" source="pTum5tM8xLdDwrU8CdoH-16" style="endArrow=none;html=1;rounded=0;defaultLabelBackgroundColor=page;labelPadding=0 4;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" target="e3_err_hours" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="820" y="1890" as="sourcePoint" />
+            <mxPoint x="870" y="1840" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pTum5tM8xLdDwrU8CdoH-19" edge="1" parent="1" source="e3_charge" style="endArrow=none;html=1;rounded=0;defaultLabelBackgroundColor=page;labelPadding=0 4;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="e3_hours_frame" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="860" y="2100" as="sourcePoint" />
+            <mxPoint x="780" y="2040" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pTum5tM8xLdDwrU8CdoH-20" edge="1" parent="1" source="e3_print_payment" style="endArrow=none;html=1;rounded=0;defaultLabelBackgroundColor=page;labelPadding=0 4;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" target="e3_charge" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="980" y="2320" as="sourcePoint" />
+            <mxPoint x="1030" y="2270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pTum5tM8xLdDwrU8CdoH-21" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;defaultLabelBackgroundColor=page;labelPadding=0 4;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="1700" y="1130" as="sourcePoint" />
+            <mxPoint x="4880" y="1130" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pTum5tM8xLdDwrU8CdoH-22" edge="1" parent="1" source="e3_calc_spaces" style="endArrow=none;html=1;rounded=0;defaultLabelBackgroundColor=page;labelPadding=0 4;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="1590" y="1450" as="sourcePoint" />
+            <mxPoint x="1830" y="1130" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pTum5tM8xLdDwrU8CdoH-23" edge="1" parent="1" source="e3_print_revenue" style="endArrow=none;html=1;rounded=0;defaultLabelBackgroundColor=page;labelPadding=0 4;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="2720" y="1310" as="sourcePoint" />
+            <mxPoint x="2810" y="1130" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pTum5tM8xLdDwrU8CdoH-24" edge="1" parent="1" source="e3_print_summary" style="endArrow=none;html=1;rounded=0;defaultLabelBackgroundColor=page;labelPadding=0 4;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="3740" y="1330" as="sourcePoint" />
+            <mxPoint x="3860" y="1130" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pTum5tM8xLdDwrU8CdoH-25" edge="1" parent="1" source="e3_invalid" style="endArrow=none;html=1;rounded=0;defaultLabelBackgroundColor=page;labelPadding=0 4;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="4640" y="1310" as="sourcePoint" />
+            <mxPoint x="4880" y="1130" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pTum5tM8xLdDwrU8CdoH-32" edge="1" parent="1" source="e3_print_full" style="endArrow=none;html=1;rounded=0;defaultLabelBackgroundColor=page;labelPadding=0 4;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="pTum5tM8xLdDwrU8CdoH-11" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="-690" y="2130" />
+              <mxPoint x="-1570" y="2130" />
+            </Array>
+            <mxPoint x="-1170" y="2180" as="sourcePoint" />
+            <mxPoint x="-1120" y="2130" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pTum5tM8xLdDwrU8CdoH-33" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;defaultLabelBackgroundColor=page;labelPadding=0 4;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="-1160" y="2870" as="sourcePoint" />
+            <mxPoint x="-1160" y="2130" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pTum5tM8xLdDwrU8CdoH-34" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;defaultLabelBackgroundColor=page;labelPadding=0 4;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="-1160" y="2870" as="sourcePoint" />
+            <mxPoint x="4880" y="2880" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pTum5tM8xLdDwrU8CdoH-35" edge="1" parent="1" source="e3_print_empty" style="endArrow=none;html=1;rounded=0;defaultLabelBackgroundColor=page;labelPadding=0 4;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="e3_print_payment" value="">
+          <mxGeometry height="50" relative="1" width="50" x="-0.0771" as="geometry">
+            <Array as="points">
+              <mxPoint x="-150" y="2650" />
+              <mxPoint x="792.5" y="2650" />
+            </Array>
+            <mxPoint x="110" y="2400" as="sourcePoint" />
+            <mxPoint x="720" y="2380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pTum5tM8xLdDwrU8CdoH-36" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;defaultLabelBackgroundColor=page;labelPadding=0 4;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="280" y="2870" as="sourcePoint" />
+            <mxPoint x="280" y="2650" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pTum5tM8xLdDwrU8CdoH-37" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;defaultLabelBackgroundColor=page;labelPadding=0 4;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="e3_print_spaces" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="1830" y="2880" as="sourcePoint" />
+            <mxPoint x="1790" y="2020" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pTum5tM8xLdDwrU8CdoH-38" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;defaultLabelBackgroundColor=page;labelPadding=0 4;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="e3_print_revenue" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="2810" y="2880" as="sourcePoint" />
+            <mxPoint x="2710" y="2020" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pTum5tM8xLdDwrU8CdoH-39" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;defaultLabelBackgroundColor=page;labelPadding=0 4;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="e3_break" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="3860" y="2880" as="sourcePoint" />
+            <mxPoint x="3990" y="2060" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pTum5tM8xLdDwrU8CdoH-40" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;defaultLabelBackgroundColor=page;labelPadding=0 4;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="e3_invalid" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="4880" y="2880" as="sourcePoint" />
+            <mxPoint x="4760" y="2130" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pTum5tM8xLdDwrU8CdoH-42" parent="1" style="parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeColor=#000000;fillColor=#FFFFFF;strokeWidth=1.35;fontColor=#000000;fontSize=15;" value="Imprimir&amp;nbsp;vehiculos_presentes,&amp;nbsp;espacios_libres,&amp;nbsp;salidas_registradas,&amp;nbsp;recaudacion_total" vertex="1">
+          <mxGeometry height="130" width="600" x="3560" y="1560" as="geometry" />
+        </mxCell>
+        <mxCell id="pTum5tM8xLdDwrU8CdoH-44" edge="1" parent="1" source="e3_end" style="endArrow=none;html=1;rounded=0;defaultLabelBackgroundColor=page;labelPadding=0 4;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="1680" y="3720" as="sourcePoint" />
+            <mxPoint x="1700" y="2870" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
