@@ -1,0 +1,334 @@
+<mxfile host="app.diagrams.net" agent="OpenAI">
+  <diagram id="abastecimiento-expedicion" name="Ejercicio 4 - Expedición">
+    <mxGraphModel dx="7522" dy="3257" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="0" fold="1" page="1" pageScale="1" pageWidth="2300" pageHeight="6000" background="#FFFFFF" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="e_report_end" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;curved=0;orthogonalLoop=1;jettySize=0;html=1;strokeColor=#000000;strokeWidth=1.2;startArrow=none;endArrow=none;entryX=0.5;entryY=0;entryPerimeter=1;" target="end" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1070" y="5870" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dj-cwktiPgk_NxydUBVT-40" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="3820" width="2980" x="-540" y="1290" as="geometry" />
+        </mxCell>
+        <mxCell id="dj-cwktiPgk_NxydUBVT-29" edge="1" parent="1" source="dj-cwktiPgk_NxydUBVT-28" style="endArrow=none;html=1;rounded=0;defaultLabelBackgroundColor=page;labelPadding=0 4;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" target="resources_at_end" value="">
+          <mxGeometry height="50" relative="1" width="50" x="0.0563" as="geometry">
+            <Array as="points">
+              <mxPoint x="450" y="4025" />
+            </Array>
+            <mxPoint x="580" y="4400" as="sourcePoint" />
+            <mxPoint x="630" y="4350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_food_validation" edge="1" parent="1" source="read_food" style="edgeStyle=orthogonalEdgeStyle;rounded=0;curved=0;orthogonalLoop=1;jettySize=0;html=1;strokeColor=#000000;strokeWidth=1.2;startArrow=none;endArrow=none;exitX=0.5;exitY=1;entryX=0.5;entryY=0;entryPerimeter=1;exitDx=0;exitDy=0;" target="food_error" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1135" y="3000" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_food_update" edge="1" parent="1" source="read_food_again" style="edgeStyle=orthogonalEdgeStyle;rounded=0;curved=0;orthogonalLoop=1;jettySize=0;html=1;strokeColor=#000000;strokeWidth=1.2;startArrow=none;endArrow=none;exitX=0.5;exitY=1;exitPerimeter=1;entryX=0.5;entryY=0;entryPerimeter=1;" target="update_resources" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dj-cwktiPgk_NxydUBVT-26" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="400" width="1085" x="590" y="3060" as="geometry" />
+        </mxCell>
+        <mxCell id="dj-cwktiPgk_NxydUBVT-22" edge="1" parent="1" source="read_food" style="endArrow=none;html=1;rounded=0;defaultLabelBackgroundColor=page;labelPadding=0 4;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" target="read_water_again" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="1090" y="2800" as="sourcePoint" />
+            <mxPoint x="1140" y="2750" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="read_food" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.3;fontColor=#000000;fontFamily=Arial;fontSize=16;align=center;verticalAlign=middle;" value="Leer alimento_consumido_dia" vertex="1">
+          <mxGeometry height="110" width="800" x="670" y="2810" as="geometry" />
+        </mxCell>
+        <mxCell id="dj-cwktiPgk_NxydUBVT-21" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="400" width="1080" x="550" y="2350" as="geometry" />
+        </mxCell>
+        <mxCell id="dj-cwktiPgk_NxydUBVT-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="420" width="1390" x="405" y="780" as="geometry" />
+        </mxCell>
+        <mxCell id="frame_water_validation" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;strokeWidth=1.4;" value="" vertex="1">
+          <mxGeometry height="400" width="1080" x="550" y="2350" as="geometry" />
+        </mxCell>
+        <mxCell id="frame_food_validation" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;strokeWidth=1.4;" value="" vertex="1">
+          <mxGeometry height="400" width="1080" x="595" y="3060" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl_days_validation" parent="1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;strokeColor=none;fillColor=none;fontColor=#000000;fontFamily=Arial;fontSize=16;fontStyle=1;" value="jornadas_planeadas &amp;lt; JORNADAS_MINIMAS O&lt;br&gt;jornadas_planeadas &amp;gt; JORNADAS_MAXIMAS" vertex="1">
+          <mxGeometry height="45" width="470" x="1300" y="710" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl_for_days" parent="1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;strokeColor=none;fillColor=none;fontColor=#000000;fontFamily=Arial;fontSize=16;fontStyle=1;" value="Mientras" vertex="1">
+          <mxGeometry height="30" width="160" x="110" y="1210" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl_water_validation" parent="1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;strokeColor=none;fillColor=none;fontColor=#000000;fontFamily=Arial;fontSize=16;fontStyle=1;" value="agua_consumida_dia &amp;lt;= 0 or&lt;br&gt;agua_consumida_dia &amp;gt; agua_disponible" vertex="1">
+          <mxGeometry height="30" width="320" x="1320" y="2300" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl_food_validation" parent="1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;strokeColor=none;fillColor=none;fontColor=#000000;fontFamily=Arial;fontSize=16;fontStyle=1;" value="alimento_consumido_dia &amp;lt;= 0 O&lt;br&gt;alimento_consumido_dia &amp;gt; alimento_disponible" vertex="1">
+          <mxGeometry height="45" width="1010" x="975" y="2995" as="geometry" />
+        </mxCell>
+        <mxCell id="start" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.3;fontColor=#000000;fontFamily=Arial;fontSize=16;align=center;verticalAlign=middle;" value="INICIO" vertex="1">
+          <mxGeometry height="75" width="200" x="1000" y="35" as="geometry" />
+        </mxCell>
+        <mxCell id="initialize" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.3;fontColor=#000000;fontFamily=Arial;fontSize=16;align=center;verticalAlign=middle;" value="AGUA_INICIAL = 150&lt;br&gt;ALIMENTO_INICIAL = 100&lt;br&gt;JORNADAS_MINIMAS = 1&lt;br&gt;JORNADAS_MAXIMAS = 30&lt;br&gt;agua_disponible = AGUA_INICIAL&lt;br&gt;alimento_disponible = ALIMENTO_INICIAL&lt;br&gt;agua_consumida_total = 0&lt;br&gt;alimento_consumido_total = 0&lt;br&gt;jornadas_completadas = 0&lt;br&gt;estado_expedicion = &quot;Completada&quot;&lt;div&gt;dia = 1&lt;/div&gt;" vertex="1">
+          <mxGeometry height="270" width="1100" x="550" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="print_header" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.3;fontColor=#000000;fontFamily=Arial;fontSize=16;align=center;verticalAlign=middle;" value="Imprimir &quot;--- CONTROL DE ABASTECIMIENTO DE UNA EXPEDICION ---&quot;" vertex="1">
+          <mxGeometry height="90" width="800" x="700" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="read_days" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.3;fontColor=#000000;fontFamily=Arial;fontSize=16;align=center;verticalAlign=middle;" value="Leer jornadas_planeadas" vertex="1">
+          <mxGeometry height="110" width="900" x="650" y="590" as="geometry" />
+        </mxCell>
+        <mxCell id="print_days_error" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.3;fontColor=#000000;fontFamily=Arial;fontSize=16;align=center;verticalAlign=middle;" value="Imprimir &quot;Error: ingrese un numero entero entre 1 y 30.&quot;" vertex="1">
+          <mxGeometry height="95" width="660" x="770" y="850" as="geometry" />
+        </mxCell>
+        <mxCell id="read_days_again" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.3;fontColor=#000000;fontFamily=Arial;fontSize=16;align=center;verticalAlign=middle;" value="Leer jornadas_planeadas&amp;nbsp;" vertex="1">
+          <mxGeometry height="100" width="660" x="770" y="1020" as="geometry" />
+        </mxCell>
+        <mxCell id="resources_at_start" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.3;fontColor=#000000;fontFamily=Arial;fontSize=16;align=center;verticalAlign=middle;" value="agua_disponible &lt;= 0 O&#xa;alimento_disponible &lt;= 0" vertex="1">
+          <mxGeometry height="190" width="600" x="800" y="1360" as="geometry" />
+        </mxCell>
+        <mxCell id="resources_yes" parent="1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;strokeColor=none;fillColor=none;fontColor=#000000;fontFamily=Arial;fontSize=16;fontStyle=1;" value="SI" vertex="1">
+          <mxGeometry height="35" width="60" x="685" y="1420" as="geometry" />
+        </mxCell>
+        <mxCell id="resources_no" parent="1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;strokeColor=none;fillColor=none;fontColor=#000000;fontFamily=Arial;fontSize=16;fontStyle=1;" value="NO" vertex="1">
+          <mxGeometry height="35" width="60" x="1450" y="1420" as="geometry" />
+        </mxCell>
+        <mxCell id="break_at_start" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.3;fontColor=#000000;fontFamily=Arial;fontSize=16;align=center;verticalAlign=middle;" value="estado_expedicion = &quot;Interrumpida por agotamiento de recursos&quot;&#xa;break" vertex="1">
+          <mxGeometry height="150" width="520" x="-450" y="1640" as="geometry" />
+        </mxCell>
+        <mxCell id="print_day" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.3;fontColor=#000000;fontFamily=Arial;fontSize=16;align=center;verticalAlign=middle;" value="Imprimir dia" vertex="1">
+          <mxGeometry height="110" width="500" x="1450" y="1630" as="geometry" />
+        </mxCell>
+        <mxCell id="read_water" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.3;fontColor=#000000;fontFamily=Arial;fontSize=16;align=center;verticalAlign=middle;" value="Leer agua_consumida_dia" vertex="1">
+          <mxGeometry height="110" width="800" x="670" y="2120" as="geometry" />
+        </mxCell>
+        <mxCell id="water_error" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.3;fontColor=#000000;fontFamily=Arial;fontSize=16;align=center;verticalAlign=middle;" value="Imprimir &quot;Error: el consumo debe ser positivo y no superar el agua disponible.&quot;" vertex="1">
+          <mxGeometry height="90" width="640" x="750" y="2430" as="geometry" />
+        </mxCell>
+        <mxCell id="read_water_again" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.3;fontColor=#000000;fontFamily=Arial;fontSize=16;align=center;verticalAlign=middle;" value="Leer agua_consumida_dia" vertex="1">
+          <mxGeometry height="100" width="640" x="750" y="2560" as="geometry" />
+        </mxCell>
+        <mxCell id="food_error" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.3;fontColor=#000000;fontFamily=Arial;fontSize=16;align=center;verticalAlign=middle;" value="Imprimir &quot;Error: el consumo debe ser positivo y no superar el alimento disponible.&quot;" vertex="1">
+          <mxGeometry height="90" width="640" x="750" y="3122" as="geometry" />
+        </mxCell>
+        <mxCell id="read_food_again" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.3;fontColor=#000000;fontFamily=Arial;fontSize=16;align=center;verticalAlign=middle;" value="Leer alimento_consumido_dia" vertex="1">
+          <mxGeometry height="100" width="640" x="750" y="3260" as="geometry" />
+        </mxCell>
+        <mxCell id="update_resources" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.3;fontColor=#000000;fontFamily=Arial;fontSize=16;align=center;verticalAlign=middle;" value="agua_disponible -= agua_consumida_dia&lt;br&gt;alimento_disponible -= alimento_consumido_dia&lt;br&gt;agua_consumida_total += agua_consumida_dia&lt;br&gt;alimento_consumido_total += alimento_consumido_dia&lt;br&gt;jornadas_completadas += 1" vertex="1">
+          <mxGeometry height="180" width="960" x="590" y="3510" as="geometry" />
+        </mxCell>
+        <mxCell id="print_remaining" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.3;fontColor=#000000;fontFamily=Arial;fontSize=16;align=center;verticalAlign=middle;" value="Imprimir agua_disponible, alimento_disponible" vertex="1">
+          <mxGeometry height="110" width="800" x="670" y="3740" as="geometry" />
+        </mxCell>
+        <mxCell id="resources_at_end" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.3;fontColor=#000000;fontFamily=Arial;fontSize=16;align=center;verticalAlign=middle;" value="(agua_disponible == 0 or alimento_disponible == 0)&lt;br&gt;and dia &amp;lt; jornadas_planeadas" vertex="1">
+          <mxGeometry height="210" width="740" x="700" y="3920" as="geometry" />
+        </mxCell>
+        <mxCell id="end_no" parent="1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;strokeColor=none;fillColor=none;fontColor=#000000;fontFamily=Arial;fontSize=16;fontStyle=1;" value="NO" vertex="1">
+          <mxGeometry height="35" width="60" x="1575" y="3930" as="geometry" />
+        </mxCell>
+        <mxCell id="break_at_end" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.3;fontColor=#000000;fontFamily=Arial;fontSize=16;align=center;verticalAlign=middle;" value="estado_expedicion = &quot;Interrumpida por agotamiento de recursos&quot;" vertex="1">
+          <mxGeometry height="150" width="520" x="200" y="4180" as="geometry" />
+        </mxCell>
+        <mxCell id="has_completed_days" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.3;fontColor=#000000;fontFamily=Arial;fontSize=16;align=center;verticalAlign=middle;" value="jornadas_completadas &gt; 0" vertex="1">
+          <mxGeometry height="220" width="700" x="720" y="5260" as="geometry" />
+        </mxCell>
+        <mxCell id="average_yes" parent="1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;strokeColor=none;fillColor=none;fontColor=#000000;fontFamily=Arial;fontSize=16;fontStyle=1;" value="SI" vertex="1">
+          <mxGeometry height="35" width="60" x="620" y="5310" as="geometry" />
+        </mxCell>
+        <mxCell id="average_no" parent="1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;strokeColor=none;fillColor=none;fontColor=#000000;fontFamily=Arial;fontSize=16;fontStyle=1;" value="NO" vertex="1">
+          <mxGeometry height="35" width="60" x="1470" y="5275" as="geometry" />
+        </mxCell>
+        <mxCell id="calculate_averages" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.3;fontColor=#000000;fontFamily=Arial;fontSize=16;align=center;verticalAlign=middle;" value="promedio_agua_diario =&#xa;agua_consumida_total / jornadas_completadas&#xa;&#xa;promedio_alimento_diario =&#xa;alimento_consumido_total / jornadas_completadas" vertex="1">
+          <mxGeometry height="160" width="520" x="130" y="5540" as="geometry" />
+        </mxCell>
+        <mxCell id="zero_averages" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.3;fontColor=#000000;fontFamily=Arial;fontSize=16;align=center;verticalAlign=middle;" value="promedio_agua_diario = 0&#xa;promedio_alimento_diario = 0" vertex="1">
+          <mxGeometry height="160" width="520" x="1540" y="5580" as="geometry" />
+        </mxCell>
+        <mxCell id="final_report" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.3;fontColor=#000000;fontFamily=Arial;fontSize=16;align=center;verticalAlign=middle;" value="Imprimir&lt;br&gt;jornadas_planeadas&lt;div&gt;jornadas_completadas&lt;br&gt;agua_consumida_total&lt;br&gt;alimento_consumido_total&lt;br&gt;agua_disponible&lt;br&gt;alimento_disponible&lt;br&gt;promedio_agua_diario&lt;br&gt;promedio_alimento_diario&lt;br&gt;estado_expedicion&lt;/div&gt;" vertex="1">
+          <mxGeometry height="280" width="1200" x="470" y="6190" as="geometry" />
+        </mxCell>
+        <mxCell id="end" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.3;fontColor=#000000;fontFamily=Arial;fontSize=16;align=center;verticalAlign=middle;" value="FIN" vertex="1">
+          <mxGeometry height="80" width="200" x="970" y="6560" as="geometry" />
+        </mxCell>
+        <mxCell id="break_lane_top" parent="1" style="ellipse;fillColor=none;strokeColor=none;opacity=0;" value="" vertex="1">
+          <mxGeometry height="2" width="2" x="179" y="1849" as="geometry" />
+        </mxCell>
+        <mxCell id="break_lane_join" parent="1" style="ellipse;fillColor=none;strokeColor=none;opacity=0;" value="" vertex="1">
+          <mxGeometry height="2" width="2" x="179" y="4099" as="geometry" />
+        </mxCell>
+        <mxCell id="break_lane_bottom" parent="1" style="ellipse;fillColor=none;strokeColor=none;opacity=0;" value="" vertex="1">
+          <mxGeometry height="2" width="2" x="179" y="4649" as="geometry" />
+        </mxCell>
+        <mxCell id="for_normal_bottom" parent="1" style="ellipse;fillColor=none;strokeColor=none;opacity=0;" value="" vertex="1">
+          <mxGeometry height="2" width="2" x="1099" y="4649" as="geometry" />
+        </mxCell>
+        <mxCell id="for_no_bottom" parent="1" style="ellipse;fillColor=none;strokeColor=none;opacity=0;" value="" vertex="1">
+          <mxGeometry height="2" width="2" x="1699" y="4649" as="geometry" />
+        </mxCell>
+        <mxCell id="average_yes_bottom" parent="1" style="ellipse;fillColor=none;strokeColor=none;opacity=0;" value="" vertex="1">
+          <mxGeometry height="2" width="2" x="459" y="5289" as="geometry" />
+        </mxCell>
+        <mxCell id="average_join" parent="1" style="ellipse;fillColor=none;strokeColor=none;opacity=0;" value="" vertex="1">
+          <mxGeometry height="2" width="2" x="1099" y="5289" as="geometry" />
+        </mxCell>
+        <mxCell id="average_no_bottom" parent="1" style="ellipse;fillColor=none;strokeColor=none;opacity=0;" value="" vertex="1">
+          <mxGeometry height="2" width="2" x="1759" y="5289" as="geometry" />
+        </mxCell>
+        <mxCell id="e_start_init" edge="1" parent="1" source="start" style="edgeStyle=orthogonalEdgeStyle;rounded=0;curved=0;orthogonalLoop=1;jettySize=0;html=1;strokeColor=#000000;strokeWidth=1.2;startArrow=none;endArrow=none;exitX=0.5;exitY=1;exitPerimeter=1;entryX=0.5;entryY=0;entryPerimeter=1;" target="initialize" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_init_header" edge="1" parent="1" source="initialize" style="edgeStyle=orthogonalEdgeStyle;rounded=0;curved=0;orthogonalLoop=1;jettySize=0;html=1;strokeColor=#000000;strokeWidth=1.2;startArrow=none;endArrow=none;exitX=0.5;exitY=1;exitPerimeter=1;entryX=0.5;entryY=0;entryPerimeter=1;" target="print_header" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_header_days" edge="1" parent="1" source="print_header" style="edgeStyle=orthogonalEdgeStyle;rounded=0;curved=0;orthogonalLoop=1;jettySize=0;html=1;strokeColor=#000000;strokeWidth=1.2;startArrow=none;endArrow=none;exitX=0.5;exitY=1;exitPerimeter=1;entryX=0.5;entryY=0;entryPerimeter=1;" target="read_days" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_days_validation" edge="1" parent="1" source="read_days" style="edgeStyle=orthogonalEdgeStyle;rounded=0;curved=0;orthogonalLoop=1;jettySize=0;html=1;strokeColor=#000000;strokeWidth=1.2;startArrow=none;endArrow=none;exitX=0.5;exitY=1;exitPerimeter=1;entryX=0.5;entryY=0;entryPerimeter=1;" target="print_days_error" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_days_error_again" edge="1" parent="1" source="print_days_error" style="edgeStyle=orthogonalEdgeStyle;rounded=0;curved=0;orthogonalLoop=1;jettySize=0;html=1;strokeColor=#000000;strokeWidth=1.2;startArrow=none;endArrow=none;exitX=0.5;exitY=1;exitPerimeter=1;entryX=0.5;entryY=0;entryPerimeter=1;" target="read_days_again" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_days_to_for" edge="1" parent="1" source="read_days_again" style="edgeStyle=orthogonalEdgeStyle;rounded=0;curved=0;orthogonalLoop=1;jettySize=0;html=1;strokeColor=#000000;strokeWidth=1.2;startArrow=none;endArrow=none;exitX=0.5;exitY=1;exitPerimeter=1;entryX=0.5;entryY=0;entryPerimeter=1;" target="resources_at_start" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_start_yes" edge="1" parent="1" source="resources_at_start" style="edgeStyle=orthogonalEdgeStyle;rounded=0;curved=0;orthogonalLoop=1;jettySize=0;html=1;strokeColor=#000000;strokeWidth=1.2;startArrow=none;endArrow=none;exitX=0;exitY=0.5;entryX=0.5;entryY=0;entryPerimeter=1;exitDx=0;exitDy=0;" target="break_at_start" value="">
+          <mxGeometry relative="1" x="0.5708" as="geometry">
+            <Array as="points">
+              <mxPoint x="-190" y="1455" />
+            </Array>
+            <mxPoint x="440" y="1454.9999999999995" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_day_water" edge="1" parent="1" source="print_day" style="edgeStyle=orthogonalEdgeStyle;rounded=0;curved=0;orthogonalLoop=1;jettySize=0;html=1;strokeColor=#000000;strokeWidth=1.2;startArrow=none;endArrow=none;exitX=0.5;exitY=1;exitPerimeter=1;entryX=0.5;entryY=0;entryPerimeter=1;" target="read_water" value="">
+          <mxGeometry relative="1" x="-0.0198" as="geometry">
+            <Array as="points">
+              <mxPoint x="1700" y="1885" />
+              <mxPoint x="1070" y="1885" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_water_validation" edge="1" parent="1" source="read_water" style="edgeStyle=orthogonalEdgeStyle;rounded=0;curved=0;orthogonalLoop=1;jettySize=0;html=1;strokeColor=#000000;strokeWidth=1.2;startArrow=none;endArrow=none;exitX=0.5;exitY=1;entryX=0.5;entryY=0;entryPerimeter=1;exitDx=0;exitDy=0;" target="water_error" value="">
+          <mxGeometry relative="1" x="0.3636" as="geometry">
+            <mxPoint x="1090" y="2290" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_water_error_again" edge="1" parent="1" source="water_error" style="edgeStyle=orthogonalEdgeStyle;rounded=0;curved=0;orthogonalLoop=1;jettySize=0;html=1;strokeColor=#000000;strokeWidth=1.2;startArrow=none;endArrow=none;exitX=0.5;exitY=1;exitPerimeter=1;entryX=0.5;entryY=0;entryPerimeter=1;" target="read_water_again" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_food_error_again" edge="1" parent="1" source="food_error" style="edgeStyle=orthogonalEdgeStyle;rounded=0;curved=0;orthogonalLoop=1;jettySize=0;html=1;strokeColor=#000000;strokeWidth=1.2;startArrow=none;endArrow=none;exitX=0.5;exitY=1;exitPerimeter=1;entryX=0.5;entryY=0;entryPerimeter=1;" target="read_food_again" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_update_print" edge="1" parent="1" source="update_resources" style="edgeStyle=orthogonalEdgeStyle;rounded=0;curved=0;orthogonalLoop=1;jettySize=0;html=1;strokeColor=#000000;strokeWidth=1.2;startArrow=none;endArrow=none;exitX=0.5;exitY=1;exitPerimeter=1;entryX=0.5;entryY=0;entryPerimeter=1;" target="print_remaining" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dj-cwktiPgk_NxydUBVT-1" parent="1" style="text;whiteSpace=wrap;html=1;fontSize=18;" value="MIENTRAS" vertex="1">
+          <mxGeometry height="40" width="120" x="410" y="710" as="geometry" />
+        </mxCell>
+        <mxCell id="dj-cwktiPgk_NxydUBVT-3" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" value="dia &amp;gt; jornadas_planeadas" vertex="1">
+          <mxGeometry height="30" width="190" x="1890" y="1210" as="geometry" />
+        </mxCell>
+        <mxCell id="dj-cwktiPgk_NxydUBVT-8" parent="1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;strokeColor=none;fillColor=none;fontColor=#000000;fontFamily=Arial;fontSize=16;fontStyle=1;" value="SI" vertex="1">
+          <mxGeometry height="35" width="60" x="605" y="3970" as="geometry" />
+        </mxCell>
+        <mxCell id="dj-cwktiPgk_NxydUBVT-14" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;" value="dia = jornada_completa + 1" vertex="1">
+          <mxGeometry height="100" width="520" x="-450" y="1849" as="geometry" />
+        </mxCell>
+        <mxCell id="dj-cwktiPgk_NxydUBVT-15" edge="1" parent="1" source="dj-cwktiPgk_NxydUBVT-14" style="endArrow=none;html=1;rounded=0;defaultLabelBackgroundColor=page;labelPadding=0 4;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" target="break_at_start" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="200" y="1950" as="sourcePoint" />
+            <mxPoint x="250" y="1900" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dj-cwktiPgk_NxydUBVT-16" edge="1" parent="1" source="print_day" style="endArrow=none;html=1;rounded=0;defaultLabelBackgroundColor=page;labelPadding=0 4;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" target="resources_at_start" value="">
+          <mxGeometry height="50" relative="1" width="50" x="0.0014" as="geometry">
+            <Array as="points">
+              <mxPoint x="1700" y="1460" />
+            </Array>
+            <mxPoint x="1140" y="1800" as="sourcePoint" />
+            <mxPoint x="1190" y="1750" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dj-cwktiPgk_NxydUBVT-19" parent="1" style="text;whiteSpace=wrap;fontSize=18;" value="MIENTRAS" vertex="1">
+          <mxGeometry height="40" width="100" x="550" y="2310" as="geometry" />
+        </mxCell>
+        <mxCell id="dj-cwktiPgk_NxydUBVT-24" parent="1" style="text;whiteSpace=wrap;fontSize=18;" value="MIENTRAS" vertex="1">
+          <mxGeometry height="40" width="100" x="595" y="3000" as="geometry" />
+        </mxCell>
+        <mxCell id="dj-cwktiPgk_NxydUBVT-27" edge="1" parent="1" source="resources_at_end" style="endArrow=none;html=1;rounded=0;defaultLabelBackgroundColor=page;labelPadding=0 4;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" target="print_remaining" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="1010" y="3930" as="sourcePoint" />
+            <mxPoint x="1060" y="3880" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dj-cwktiPgk_NxydUBVT-28" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;" value="dia = jornada_completa + 1" vertex="1">
+          <mxGeometry height="100" width="520" x="200" y="4430" as="geometry" />
+        </mxCell>
+        <mxCell id="dj-cwktiPgk_NxydUBVT-36" edge="1" parent="1" source="dj-cwktiPgk_NxydUBVT-28" style="endArrow=none;html=1;rounded=0;defaultLabelBackgroundColor=page;labelPadding=0 4;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="resources_at_end" value="">
+          <mxGeometry height="50" relative="1" width="50" x="-0.2546" as="geometry">
+            <Array as="points">
+              <mxPoint x="460" y="4810" />
+              <mxPoint x="1460" y="4820" />
+              <mxPoint x="1810" y="4830" />
+              <mxPoint x="1800" y="4030" />
+            </Array>
+            <mxPoint x="1040" y="4650" as="sourcePoint" />
+            <mxPoint x="1440" y="4020" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dj-cwktiPgk_NxydUBVT-38" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;defaultLabelBackgroundColor=page;labelPadding=0 4;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="dj-cwktiPgk_NxydUBVT-14" value="">
+          <mxGeometry height="50" relative="1" width="50" x="0.0024" as="geometry">
+            <Array as="points">
+              <mxPoint x="-180" y="4810" />
+            </Array>
+            <mxPoint x="460" y="4810" as="sourcePoint" />
+            <mxPoint x="370" y="2220" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dj-cwktiPgk_NxydUBVT-41" edge="1" parent="1" source="dj-cwktiPgk_NxydUBVT-40" style="endArrow=none;html=1;rounded=0;defaultLabelBackgroundColor=page;labelPadding=0 4;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="dj-cwktiPgk_NxydUBVT-28" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="940" y="4820" />
+              <mxPoint x="460" y="4810" />
+            </Array>
+            <mxPoint x="750" y="4940" as="sourcePoint" />
+            <mxPoint x="800" y="4890" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dj-cwktiPgk_NxydUBVT-43" edge="1" parent="1" source="calculate_averages" style="endArrow=none;html=1;rounded=0;defaultLabelBackgroundColor=page;labelPadding=0 4;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" target="has_completed_days" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="390" y="5370" />
+            </Array>
+            <mxPoint x="700" y="5740" as="sourcePoint" />
+            <mxPoint x="750" y="5690" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dj-cwktiPgk_NxydUBVT-44" edge="1" parent="1" source="zero_averages" style="endArrow=none;html=1;rounded=0;defaultLabelBackgroundColor=page;labelPadding=0 4;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" target="has_completed_days" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="1800" y="5380" />
+            </Array>
+            <mxPoint x="1440" y="5650" as="sourcePoint" />
+            <mxPoint x="1490" y="5600" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dj-cwktiPgk_NxydUBVT-46" edge="1" parent="1" source="has_completed_days" style="endArrow=none;html=1;rounded=0;defaultLabelBackgroundColor=page;labelPadding=0 4;entryX=0.539;entryY=1.001;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryPerimeter=0;" target="dj-cwktiPgk_NxydUBVT-40" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="840" y="5410" as="sourcePoint" />
+            <mxPoint x="890" y="5360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dj-cwktiPgk_NxydUBVT-47" edge="1" parent="1" source="zero_averages" style="endArrow=none;html=1;rounded=0;defaultLabelBackgroundColor=page;labelPadding=0 4;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="calculate_averages" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="1800" y="5880" />
+              <mxPoint x="390" y="5860" />
+            </Array>
+            <mxPoint x="970" y="5970" as="sourcePoint" />
+            <mxPoint x="1020" y="5920" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
