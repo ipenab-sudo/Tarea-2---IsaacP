@@ -1,0 +1,144 @@
+<mxfile host="app.diagrams.net" agent="OpenAI">
+  <diagram id="ejercicio1_temperatura" name="Ejercicio 1 - Control de temperatura">
+    <mxGraphModel dx="4003" dy="4747" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1700" pageHeight="2250" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="jxZxkkHPWIjLxPhq8W9E-9" edge="1" parent="1" source="e1_print_final" style="endArrow=none;html=1;rounded=0;defaultLabelBackgroundColor=page;labelPadding=0 4;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" target="e1_init" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points" />
+            <mxPoint x="1702.5" y="-920" as="sourcePoint" />
+            <mxPoint x="1770" y="-970" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e1_loop_frame" parent="1" style="shape=rectangle;rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=14;spacingTop=8;strokeColor=#000000;fillColor=#FFFFFF;strokeWidth=1.5;fontColor=#000000;fontSize=16;fontStyle=1;container=0;collapsible=0;" value="" vertex="1">
+          <mxGeometry height="421" width="1067.5" x="1162.5" y="-951" as="geometry" />
+        </mxCell>
+        <mxCell id="e1_start" parent="1" style="ellipse;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeColor=#000000;fillColor=#FFFFFF;strokeWidth=1.35;fontColor=#000000;fontSize=15;" value="INICIO" vertex="1">
+          <mxGeometry height="65" width="150" x="790" y="-2210" as="geometry" />
+        </mxCell>
+        <mxCell id="e1_read" parent="1" style="parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeColor=#000000;fillColor=#FFFFFF;strokeWidth=1.35;fontColor=#000000;fontSize=15;" value="Leer temperatura_inicial,&lt;br&gt;temperatura_objetivo, incremento" vertex="1">
+          <mxGeometry height="110" width="620" x="560" y="-1870" as="geometry" />
+        </mxCell>
+        <mxCell id="e1_d_goal" parent="1" style="rhombus;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeColor=#000000;fillColor=#FFFFFF;strokeWidth=1.35;fontColor=#000000;fontSize=15;" value="temperatura_objetivo&lt;br&gt;&amp;lt;= temperatura_inicial" vertex="1">
+          <mxGeometry height="150" width="400" x="670" y="-1640" as="geometry" />
+        </mxCell>
+        <mxCell id="e1_err_goal" parent="1" style="parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeColor=#000000;fillColor=#FFFFFF;strokeWidth=1.35;fontColor=#000000;fontSize=15;" value="Imprimir error: &quot;la temperatura&lt;br&gt;objetivo debe ser mayor que&lt;br&gt;la temperatura inicial.&quot;" vertex="1">
+          <mxGeometry height="110" width="460" x="140" y="-1360" as="geometry" />
+        </mxCell>
+        <mxCell id="e1_d_inc" parent="1" style="rhombus;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeColor=#000000;fillColor=#FFFFFF;strokeWidth=1.35;fontColor=#000000;fontSize=15;" value="incremento&lt;br&gt;&amp;lt;= 0" vertex="1">
+          <mxGeometry height="150" width="400" x="1090" y="-1440" as="geometry" />
+        </mxCell>
+        <mxCell id="e1_err_inc" parent="1" style="parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeColor=#000000;fillColor=#FFFFFF;strokeWidth=1.35;fontColor=#000000;fontSize=15;" value="Imprimir &quot;error: el incremento&lt;br&gt;debe ser estrictamente positivo&quot;" vertex="1">
+          <mxGeometry height="110" width="460" x="690" y="-1220" as="geometry" />
+        </mxCell>
+        <mxCell id="e1_init" parent="1" style="rectangle;rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeColor=#000000;fillColor=#FFFFFF;strokeWidth=1.35;fontColor=#000000;fontSize=15;" value="temperatura_actual = temperatura_inicial&lt;br&gt;ciclos = 0" vertex="1">
+          <mxGeometry height="110" width="500" x="1452.5" y="-1220" as="geometry" />
+        </mxCell>
+        <mxCell id="e1_update" parent="1" style="rectangle;rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeColor=#000000;fillColor=#FFFFFF;strokeWidth=1.35;fontColor=#000000;fontSize=15;" value="temperatura_actual += incremento&lt;br&gt;ciclos += 1" vertex="1">
+          <mxGeometry height="110" width="450" x="1477.5" y="-895" as="geometry" />
+        </mxCell>
+        <mxCell id="e1_print_step" parent="1" style="parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeColor=#000000;fillColor=#FFFFFF;strokeWidth=1.35;fontColor=#000000;fontSize=15;" value="Imprimir temperatura_actual, ciclos" vertex="1">
+          <mxGeometry height="100" width="450" x="1477.5" y="-710" as="geometry" />
+        </mxCell>
+        <mxCell id="e1_print_final" parent="1" style="parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeColor=#000000;fillColor=#FFFFFF;strokeWidth=1.35;fontColor=#000000;fontSize=15;" value="Imprimir temperatura final&lt;br&gt;y cantidad total de ciclos" vertex="1">
+          <mxGeometry height="100" width="450" x="1490" y="-450" as="geometry" />
+        </mxCell>
+        <mxCell id="e1_end" parent="1" style="ellipse;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeColor=#000000;fillColor=#FFFFFF;strokeWidth=1.35;fontColor=#000000;fontSize=15;" value="FIN" vertex="1">
+          <mxGeometry height="65" width="150" x="795" y="-70" as="geometry" />
+        </mxCell>
+        <mxCell id="e1_goal_no" parent="1" style="text;html=1;align=center;verticalAlign=middle;strokeColor=none;fillColor=none;fontColor=#000000;fontSize=14;fontStyle=1;" value="NO" vertex="1">
+          <mxGeometry height="36" width="70" x="1162.5" y="-1630" as="geometry" />
+        </mxCell>
+        <mxCell id="e1_goal_yes" parent="1" style="text;html=1;align=center;verticalAlign=middle;strokeColor=none;fillColor=none;fontColor=#000000;fontSize=14;fontStyle=1;" value="SÍ" vertex="1">
+          <mxGeometry height="36" width="70" x="470" y="-1630" as="geometry" />
+        </mxCell>
+        <mxCell id="e1_inc_no" parent="1" style="text;html=1;align=center;verticalAlign=middle;strokeColor=none;fillColor=none;fontColor=#000000;fontSize=14;fontStyle=1;" value="NO" vertex="1">
+          <mxGeometry height="36" width="70" x="1580" y="-1420" as="geometry" />
+        </mxCell>
+        <mxCell id="e1_inc_yes" parent="1" style="text;html=1;align=center;verticalAlign=middle;strokeColor=none;fillColor=none;fontColor=#000000;fontSize=14;fontStyle=1;" value="SÍ" vertex="1">
+          <mxGeometry height="36" width="70" x="930" y="-1420" as="geometry" />
+        </mxCell>
+        <mxCell id="e1_a1" edge="1" parent="1" source="e1_start" style="edgeStyle=none;rounded=0;html=1;strokeColor=#000000;strokeWidth=1.35;startArrow=none;endArrow=none;startFill=0;endFill=0;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitPerimeter=1;entryPerimeter=1;" target="e1_read" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e1_a2" edge="1" parent="1" source="e1_read" style="edgeStyle=none;rounded=0;html=1;strokeColor=#000000;strokeWidth=1.35;startArrow=none;endArrow=none;startFill=0;endFill=0;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitPerimeter=1;entryPerimeter=1;" target="e1_d_goal" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e1_a7" edge="1" parent="1" source="e1_update" style="edgeStyle=none;rounded=0;html=1;strokeColor=#000000;strokeWidth=1.35;startArrow=none;endArrow=none;startFill=0;endFill=0;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitPerimeter=1;entryPerimeter=1;" target="e1_print_step" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jxZxkkHPWIjLxPhq8W9E-1" parent="1" style="parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeColor=#000000;fillColor=#FFFFFF;strokeWidth=1.35;fontColor=#000000;fontSize=15;" value="Imprimir &quot;=== CONTROL DE TEMPERATURA&quot;" vertex="1">
+          <mxGeometry height="110" width="460" x="640" y="-2100" as="geometry" />
+        </mxCell>
+        <mxCell id="jxZxkkHPWIjLxPhq8W9E-2" edge="1" parent="1" source="e1_err_goal" style="endArrow=none;html=1;rounded=0;defaultLabelBackgroundColor=page;labelPadding=0 4;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" target="e1_d_goal" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="370" y="-1565" />
+            </Array>
+            <mxPoint x="600" y="-1350" as="sourcePoint" />
+            <mxPoint x="650" y="-1400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jxZxkkHPWIjLxPhq8W9E-3" edge="1" parent="1" source="e1_d_goal" style="endArrow=none;html=1;rounded=0;defaultLabelBackgroundColor=page;labelPadding=0 4;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="e1_d_inc" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="1290" y="-1565" />
+            </Array>
+            <mxPoint x="1050" y="-1550" as="sourcePoint" />
+            <mxPoint x="1100" y="-1600" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jxZxkkHPWIjLxPhq8W9E-5" edge="1" parent="1" source="e1_err_inc" style="endArrow=none;html=1;rounded=0;defaultLabelBackgroundColor=page;labelPadding=0 4;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" target="e1_d_inc" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="920" y="-1365" />
+            </Array>
+            <mxPoint x="1090" y="-1250" as="sourcePoint" />
+            <mxPoint x="1140" y="-1300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jxZxkkHPWIjLxPhq8W9E-6" edge="1" parent="1" source="e1_init" style="endArrow=none;html=1;rounded=0;defaultLabelBackgroundColor=page;labelPadding=0 4;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" target="e1_d_inc" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="1700" y="-1365" />
+            </Array>
+            <mxPoint x="1670" y="-1245" as="sourcePoint" />
+            <mxPoint x="1500" y="-1360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jxZxkkHPWIjLxPhq8W9E-7" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Mientras" vertex="1">
+          <mxGeometry height="30" width="60" x="1172.5" y="-990" as="geometry" />
+        </mxCell>
+        <mxCell id="jxZxkkHPWIjLxPhq8W9E-8" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="temperatura_actual &amp;lt; temperatura_objetivo" vertex="1">
+          <mxGeometry height="30" width="270" x="1970" y="-990" as="geometry" />
+        </mxCell>
+        <mxCell id="jxZxkkHPWIjLxPhq8W9E-12" edge="1" parent="1" source="e1_end" style="endArrow=none;html=1;rounded=0;defaultLabelBackgroundColor=page;labelPadding=0 4;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="e1_print_final" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="870" y="-220" />
+              <mxPoint x="1715" y="-230" />
+            </Array>
+            <mxPoint x="870" y="-80" as="sourcePoint" />
+            <mxPoint x="820" y="-740" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jxZxkkHPWIjLxPhq8W9E-13" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;defaultLabelBackgroundColor=page;labelPadding=0 4;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="e1_err_inc" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="920" y="-220" as="sourcePoint" />
+            <mxPoint x="950" y="-660" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jxZxkkHPWIjLxPhq8W9E-14" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;defaultLabelBackgroundColor=page;labelPadding=0 4;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="e1_err_goal" value="">
+          <mxGeometry height="50" relative="1" width="50" x="-0.0093" as="geometry">
+            <Array as="points">
+              <mxPoint x="360" y="-220" />
+            </Array>
+            <mxPoint x="870" y="-220" as="sourcePoint" />
+            <mxPoint x="350" y="-1240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
