@@ -1,0 +1,164 @@
+<mxfile host="app.diagrams.net" agent="OpenAI">
+  <diagram id="ejercicio2_consumo_agua" name="Ejercicio 2 - Consumo semanal de agua">
+    <mxGraphModel dx="2669" dy="4784" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1900" pageHeight="3120" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="r4m09e59gY_ikRoelH5w-8" edge="1" parent="1" source="e2_average" style="endArrow=none;html=1;rounded=0;defaultLabelBackgroundColor=page;labelPadding=0 4;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="e2_next_day" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="890" y="2580" as="sourcePoint" />
+            <mxPoint x="950" y="2540" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e2_for_frame" parent="1" style="shape=rectangle;rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=14;spacingTop=8;strokeColor=#000000;fillColor=#FFFFFF;strokeWidth=1.5;fontColor=#000000;fontSize=16;fontStyle=1;container=0;collapsible=0;" value="" vertex="1">
+          <mxGeometry height="2140" width="1560" x="170" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="e2_validation_frame" parent="1" style="shape=rectangle;rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=14;spacingTop=8;strokeColor=#000000;fillColor=#FFFFFF;strokeWidth=1.5;fontColor=#000000;fontSize=16;fontStyle=1;container=0;collapsible=0;" value="" vertex="1">
+          <mxGeometry height="390" width="1060" x="420" y="640" as="geometry" />
+        </mxCell>
+        <mxCell id="e2_start" parent="1" style="ellipse;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeColor=#000000;fillColor=#FFFFFF;strokeWidth=1.35;fontColor=#000000;fontSize=15;" value="INICIO" vertex="1">
+          <mxGeometry height="65" width="150" x="875" y="-65" as="geometry" />
+        </mxCell>
+        <mxCell id="e2_init" parent="1" style="rectangle;rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeColor=#000000;fillColor=#FFFFFF;strokeWidth=1.35;fontColor=#000000;fontSize=15;" value="CANTIDAD_DIAS = 7&lt;br&gt;Definir UMBRAL_CONSUMO = 150&lt;br&gt;total_consumo = 0&lt;br&gt;consumo_maximo = 0&lt;br&gt;dias_superiores = 0&lt;br&gt;dia = 1" vertex="1">
+          <mxGeometry height="150" width="600" x="650" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="e2_for_init" parent="1" style="rectangle;rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeColor=#000000;fillColor=#FFFFFF;strokeWidth=1.35;fontColor=#000000;fontSize=15;" value="leer&amp;nbsp;consumo_diario" vertex="1">
+          <mxGeometry height="100" width="500" x="700" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="e2_read" parent="1" style="parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeColor=#000000;fillColor=#FFFFFF;strokeWidth=1.35;fontColor=#000000;fontSize=15;" value="Leer consumo_diario&lt;br&gt;(litros)" vertex="1">
+          <mxGeometry height="100" width="500" x="700" y="880" as="geometry" />
+        </mxCell>
+        <mxCell id="e2_accum" parent="1" style="rectangle;rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeColor=#000000;fillColor=#FFFFFF;strokeWidth=1.35;fontColor=#000000;fontSize=15;" value="total_consumo += consumo_diario" vertex="1">
+          <mxGeometry height="100" width="500" x="700" y="1130" as="geometry" />
+        </mxCell>
+        <mxCell id="e2_d_max" parent="1" style="rhombus;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeColor=#000000;fillColor=#FFFFFF;strokeWidth=1.35;fontColor=#000000;fontSize=15;" value="consumo_diario&lt;br&gt;&amp;gt; consumo_maximo" vertex="1">
+          <mxGeometry height="150" width="360" x="770" y="1340" as="geometry" />
+        </mxCell>
+        <mxCell id="e2_set_max" parent="1" style="rectangle;rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeColor=#000000;fillColor=#FFFFFF;strokeWidth=1.35;fontColor=#000000;fontSize=15;" value="consumo_maximo = consumo_diario" vertex="1">
+          <mxGeometry height="100" width="440" x="280" y="1630" as="geometry" />
+        </mxCell>
+        <mxCell id="e2_d_threshold" parent="1" style="rhombus;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeColor=#000000;fillColor=#FFFFFF;strokeWidth=1.35;fontColor=#000000;fontSize=15;" value="consumo_diario &amp;gt; UMBRAL_CONSUMO" vertex="1">
+          <mxGeometry height="150" width="360" x="770" y="2040" as="geometry" />
+        </mxCell>
+        <mxCell id="e2_count" parent="1" style="rectangle;rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeColor=#000000;fillColor=#FFFFFF;strokeWidth=1.35;fontColor=#000000;fontSize=15;" value="dias_superiores += 1" vertex="1">
+          <mxGeometry height="100" width="440" x="280" y="2200" as="geometry" />
+        </mxCell>
+        <mxCell id="e2_next_day" parent="1" style="rectangle;rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeColor=#000000;fillColor=#FFFFFF;strokeWidth=1.35;fontColor=#000000;fontSize=15;" value="dia += 1" vertex="1">
+          <mxGeometry height="50" width="150" x="875" y="2440" as="geometry" />
+        </mxCell>
+        <mxCell id="e2_average" parent="1" style="rectangle;rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeColor=#000000;fillColor=#FFFFFF;strokeWidth=1.35;fontColor=#000000;fontSize=15;" value="promedio_diario =&lt;br&gt;total_consumo / CANTIDAD_DIAS" vertex="1">
+          <mxGeometry height="100" width="500" x="700" y="2640" as="geometry" />
+        </mxCell>
+        <mxCell id="e2_report" parent="1" style="parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeColor=#000000;fillColor=#FFFFFF;strokeWidth=1.35;fontColor=#000000;fontSize=15;" value="Imprimir&amp;nbsp;total_consumo,&amp;nbsp;promedio_diario,&amp;nbsp;consumo_maximo,&amp;nbsp;dias_superiores" vertex="1">
+          <mxGeometry height="120" width="760" x="570" y="2820" as="geometry" />
+        </mxCell>
+        <mxCell id="e2_end" parent="1" style="ellipse;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeColor=#000000;fillColor=#FFFFFF;strokeWidth=1.35;fontColor=#000000;fontSize=15;" value="FIN" vertex="1">
+          <mxGeometry height="65" width="150" x="875" y="3010" as="geometry" />
+        </mxCell>
+        <mxCell id="e2_max_yes" parent="1" style="text;html=1;align=center;verticalAlign=middle;strokeColor=none;fillColor=none;fontColor=#000000;fontSize=14;fontStyle=1;" value="SÍ" vertex="1">
+          <mxGeometry height="36" width="70" x="650" y="1365" as="geometry" />
+        </mxCell>
+        <mxCell id="e2_max_no" parent="1" style="text;html=1;align=center;verticalAlign=middle;strokeColor=none;fillColor=none;fontColor=#000000;fontSize=14;fontStyle=1;" value="NO" vertex="1">
+          <mxGeometry height="36" width="70" x="1140" y="1365" as="geometry" />
+        </mxCell>
+        <mxCell id="e2_thr_yes" parent="1" style="text;html=1;align=center;verticalAlign=middle;strokeColor=none;fillColor=none;fontColor=#000000;fontSize=14;fontStyle=1;" value="SÍ" vertex="1">
+          <mxGeometry height="36" width="70" x="650" y="2065" as="geometry" />
+        </mxCell>
+        <mxCell id="e2_thr_no" parent="1" style="text;html=1;align=center;verticalAlign=middle;strokeColor=none;fillColor=none;fontColor=#000000;fontSize=14;fontStyle=1;" value="NO" vertex="1">
+          <mxGeometry height="36" width="70" x="1140" y="2065" as="geometry" />
+        </mxCell>
+        <mxCell id="e2_a1" edge="1" parent="1" source="e2_start" style="edgeStyle=none;rounded=0;html=1;strokeColor=#000000;strokeWidth=1.35;startArrow=none;endArrow=none;startFill=0;endFill=0;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitPerimeter=1;entryPerimeter=1;" target="e2_init" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2_a5" edge="1" parent="1" source="e2_validation_frame" style="edgeStyle=none;rounded=0;html=1;strokeColor=#000000;strokeWidth=1.35;startArrow=none;endArrow=none;startFill=0;endFill=0;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitDx=0;exitDy=0;entryDx=0;entryDy=0;" target="e2_accum" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="950" y="1070" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e2_a2" edge="1" parent="1" source="e2_init" style="edgeStyle=none;rounded=0;html=1;strokeColor=#000000;strokeWidth=1.35;startArrow=none;endArrow=none;startFill=0;endFill=0;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitPerimeter=1;entryPerimeter=1;" target="e2_for_init" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2_a3" edge="1" parent="1" source="e2_for_init" style="edgeStyle=none;rounded=0;html=1;strokeColor=#000000;strokeWidth=1.35;startArrow=none;endArrow=none;startFill=0;endFill=0;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitPerimeter=1;entryPerimeter=1;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="950" y="640" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e2_a8" edge="1" parent="1" source="e2_accum" style="edgeStyle=none;rounded=0;html=1;strokeColor=#000000;strokeWidth=1.35;startArrow=none;endArrow=none;startFill=0;endFill=0;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitPerimeter=1;entryPerimeter=1;" target="e2_d_max" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2_a9_yes" edge="1" parent="1" source="e2_d_max" style="edgeStyle=none;rounded=0;html=1;strokeColor=#000000;strokeWidth=1.35;startArrow=none;endArrow=none;startFill=0;endFill=0;exitX=0;exitY=0.5;entryX=0.5;entryY=0;exitPerimeter=1;entryPerimeter=1;" target="e2_set_max" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="500" y="1420" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e2_a9_no" edge="1" parent="1" source="e2_d_max" style="edgeStyle=none;rounded=0;html=1;strokeColor=#000000;strokeWidth=1.35;startArrow=none;endArrow=none;startFill=0;endFill=0;exitX=1;exitY=0.5;entryX=0.5;entryY=0;exitPerimeter=1;entryPerimeter=1;" target="e2_d_threshold" value="">
+          <mxGeometry relative="1" x="0.0594" as="geometry">
+            <Array as="points">
+              <mxPoint x="1490" y="1420" />
+              <mxPoint x="1490" y="1880" />
+              <mxPoint x="950" y="1890" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e2_a10" edge="1" parent="1" source="e2_set_max" style="edgeStyle=none;rounded=0;html=1;strokeColor=#000000;strokeWidth=1.35;startArrow=none;endArrow=none;startFill=0;endFill=0;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitPerimeter=1;entryPerimeter=1;" target="e2_d_threshold" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="500" y="1890" />
+              <mxPoint x="950" y="1890" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e2_a11_yes" edge="1" parent="1" source="e2_d_threshold" style="edgeStyle=none;rounded=0;html=1;strokeColor=#000000;strokeWidth=1.35;startArrow=none;endArrow=none;startFill=0;endFill=0;exitX=0;exitY=0.5;entryX=0.5;entryY=0;exitPerimeter=1;entryPerimeter=1;" target="e2_count" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="500" y="2115" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e2_a11_no" edge="1" parent="1" source="e2_d_threshold" style="edgeStyle=none;rounded=0;html=1;strokeColor=#000000;strokeWidth=1.35;startArrow=none;endArrow=none;startFill=0;endFill=0;exitX=1;exitY=0.5;entryX=0.5;entryY=0;exitPerimeter=1;entryPerimeter=1;" target="e2_next_day" value="">
+          <mxGeometry relative="1" x="0.0005" as="geometry">
+            <Array as="points">
+              <mxPoint x="1500" y="2115" />
+              <mxPoint x="1500" y="2360" />
+              <mxPoint x="950" y="2360" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e2_a12" edge="1" parent="1" source="e2_count" style="edgeStyle=none;rounded=0;html=1;strokeColor=#000000;strokeWidth=1.35;startArrow=none;endArrow=none;startFill=0;endFill=0;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitPerimeter=1;entryPerimeter=1;" target="e2_next_day" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="500" y="2360" />
+              <mxPoint x="950" y="2360" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e2_a14" edge="1" parent="1" source="e2_average" style="edgeStyle=none;rounded=0;html=1;strokeColor=#000000;strokeWidth=1.35;startArrow=none;endArrow=none;startFill=0;endFill=0;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitPerimeter=1;entryPerimeter=1;" target="e2_report" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2_a15" edge="1" parent="1" source="e2_report" style="edgeStyle=none;rounded=0;html=1;strokeColor=#000000;strokeWidth=1.35;startArrow=none;endArrow=none;startFill=0;endFill=0;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitPerimeter=1;entryPerimeter=1;" target="e2_end" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r4m09e59gY_ikRoelH5w-1" parent="1" style="rectangle;rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeColor=#000000;fillColor=#FFFFFF;strokeWidth=1.35;fontColor=#000000;fontSize=15;" value="Imprimir &quot;--- REGISTRO SEMANAL DE CONSUMO DE AGUA ---&quot;" vertex="1">
+          <mxGeometry height="65" width="480" x="710" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="r4m09e59gY_ikRoelH5w-2" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=18;" value="mientras" vertex="1">
+          <mxGeometry height="30" width="60" x="190" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="r4m09e59gY_ikRoelH5w-3" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=18;" value="dia &amp;gt; CANTIDAD_DIAS" vertex="1">
+          <mxGeometry height="30" width="250" x="1470" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="r4m09e59gY_ikRoelH5w-4" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=18;" value="mientras" vertex="1">
+          <mxGeometry height="30" width="60" x="410" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="r4m09e59gY_ikRoelH5w-5" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=18;" value="consumo_diario &amp;lt; 0" vertex="1">
+          <mxGeometry height="30" width="250" x="1250" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="r4m09e59gY_ikRoelH5w-6" parent="1" style="parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeColor=#000000;fillColor=#FFFFFF;strokeWidth=1.35;fontColor=#000000;fontSize=15;" value="Imprimir &quot;Error: el consumo no puede ser negativo. Intente de nuevo.&quot;" vertex="1">
+          <mxGeometry height="100" width="500" x="690" y="700" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
